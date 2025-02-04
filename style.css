@@ -12,13 +12,24 @@ html,body{
     height: 100%;
     background-color: bisque;
 }
+
 ul{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
-    padding: 15px;
-    background-color: slategrey;
+        padding: 15px;
+        background-color: slategrey;
+}
+@media (min-width : 768px) {
+    
+    ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
 }
 a{
     text-decoration: none;
